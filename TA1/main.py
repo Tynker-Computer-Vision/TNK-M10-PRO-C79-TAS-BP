@@ -52,9 +52,7 @@ def checkPixel(x, y):
         return 0
     return 1
 
-# Create the getSensorsData function
 def getSensorsData(car, angle):
-    # Access global screen variable
     global screen
     # Create margin variable i.e distance of sensor from the car
     margin = 55
