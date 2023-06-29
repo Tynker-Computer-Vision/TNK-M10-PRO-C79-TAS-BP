@@ -52,7 +52,9 @@ def checkPixel(x, y):
         return 0
     return 1
 
+# Create the getSensorsData function
 def getSensorsData(car, angle):
+    # Access global screen variable
     global screen
     # Create margin variable i.e distance of sensor from the car
     margin = 55
@@ -133,7 +135,7 @@ def eval_fitness(generation, config):
           forward = True
           change = 0
           
-          # SA1:- Call getSensorData(player, angle)
+          # Call getSensorData(player, angle)
           getSensorsData(player, angle)          
           
           output = net.activate((player.x, player.y))
